@@ -2,7 +2,7 @@ services:
   app:
     build: .
     restart: unless-stopped
-    networks: [web]
+    networks: [traefik-net]
     labels:
       - traefik.enable=true
       - traefik.docker.network=web
@@ -12,5 +12,5 @@ services:
       - traefik.http.services.app.loadbalancer.server.port=8080
 
 networks:
-  web:
+  traefik-net:
     external: true
