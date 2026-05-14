@@ -8,8 +8,11 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
-	<title>deployer-demo</title>
-	<meta name="description" content="SvelteKit + Tailwind + shadcn-svelte demo" />
+	<title>deployer — ship a container to one host in one command</title>
+	<meta
+		name="description"
+		content="A small Go CLI that deploys a containerised app to a single host: SSH, Docker Compose, Traefik, Cloudflare DNS, and Zero Trust in one command."
+	/>
 </svelte:head>
 
 <ModeWatcher />
